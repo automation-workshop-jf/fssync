@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - FieldStack</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f9fafb;
+            padding: 2rem 1rem;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: white;
+            padding: 3rem;
+            border-radius: 8px;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            color: #111827;
+            margin-bottom: 0.5rem;
+        }
+
+        .last-updated {
+            color: #6b7280;
+            font-size: 0.875rem;
+            margin-bottom: 2rem;
+        }
+
+        h2 {
+            font-size: 1.5rem;
+            color: #111827;
+            margin-top: 2rem;
+            margin-bottom: 1rem;
+        }
+
+        h3 {
+            font-size: 1.25rem;
+            color: #374151;
+            margin-top: 1.5rem;
+            margin-bottom: 0.75rem;
+        }
+
+        p {
+            color: #4b5563;
+            margin-bottom: 1rem;
+        }
+
+        ul {
+            margin-left: 1.5rem;
+            margin-bottom: 1rem;
+        }
+
+        li {
+            color: #4b5563;
+            margin-bottom: 0.5rem;
+        }
+
+        strong {
+            color: #111827;
+        }
+
+        a {
+            color: #2563eb;
+            text-decoration: underline;
+        }
+
+        a:hover {
+            color: #1d4ed8;
+        }
+
+        .summary-box {
+            background-color: #eff6ff;
+            border-left: 4px solid #3b82f6;
+            padding: 1rem;
+            margin: 2rem 0;
+        }
+
+        .summary-box p {
+            color: #1e40af;
+            font-size: 0.875rem;
+            margin: 0;
+        }
+
+        .back-link {
+            margin-top: 2rem;
+            padding-top: 2rem;
+            border-top: 1px solid #e5e7eb;
+        }
+
+        @media print {
+            body {
+                background: white;
+                padding: 0;
+            }
+            .container {
+                box-shadow: none;
+                padding: 1rem;
+            }
+            .back-link {
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Privacy Policy</h1>
+        <p class="last-updated">Last Updated: <script>document.write(new Date().toLocaleDateString())</script></p>
+
+        <section>
+            <h2>1. Introduction</h2>
+            <p>
+                This Privacy Policy describes how FieldStack ("we", "our", or "the Application")
+                collects, uses, and protects your information when you use our service to synchronize transaction
+                data between your SQL Server database and QuickBooks Online.
+            </p>
+        </section>
+
+        <section>
+            <h2>2. Information We Collect</h2>
+
+            <h3>2.1 QuickBooks Data</h3>
+            <p>When you connect your QuickBooks Online account, we collect and store:</p>
+            <ul>
+                <li>QuickBooks Company ID (Realm ID)</li>
+                <li>OAuth access tokens and refresh tokens (encrypted)</li>
+                <li>Chart of accounts information</li>
+                <li>Customer and vendor lists</li>
+                <li>Class and department information</li>
+                <li>Journal entry data created by the sync process</li>
+            </ul>
+
+            <h3>2.2 Transaction Data</h3>
+            <p>We access transaction data from your SQL Server database including:</p>
+            <ul>
+                <li>Transaction dates and amounts</li>
+                <li>Store and location information</li>
+                <li>Transaction types and categories</li>
+                <li>Payment methods</li>
+            </ul>
+
+            <h3>2.3 Application Usage Data</h3>
+            <p>We collect operational data to ensure the application functions correctly:</p>
+            <ul>
+                <li>Sync history and batch information</li>
+                <li>Error logs and diagnostic information</li>
+                <li>Application performance metrics</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>3. How We Use Your Information</h2>
+            <p>We use the collected information solely for the following purposes:</p>
+            <ul>
+                <li><strong>Synchronization:</strong> To read transaction data from your database and create journal entries in QuickBooks Online</li>
+                <li><strong>Mapping:</strong> To maintain mappings between your data and QuickBooks accounts, classes, and customers</li>
+                <li><strong>Monitoring:</strong> To track sync status, detect errors, and ensure data integrity</li>
+                <li><strong>Support:</strong> To troubleshoot issues and provide technical assistance</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>4. Data Storage and Security</h2>
+
+            <h3>4.1 Storage Location</h3>
+            <p>
+                All data is stored on your organization's servers or cloud infrastructure. We do not transfer
+                your data to third-party servers except as required for QuickBooks API communication.
+            </p>
+
+            <h3>4.2 Security Measures</h3>
+            <p>We implement industry-standard security practices:</p>
+            <ul>
+                <li>All QuickBooks OAuth tokens are encrypted at rest</li>
+                <li>HTTPS/TLS encryption for all data in transit</li>
+                <li>SQL Server connections use encrypted channels</li>
+                <li>Access control and authentication via JWT tokens</li>
+                <li>Security headers via Helmet.js</li>
+                <li>Regular security updates and patches</li>
+            </ul>
+
+            <h3>4.3 Data Retention</h3>
+            <p>
+                Sync history and logs are retained locally on your server. QuickBooks OAuth tokens are stored
+                as long as your QuickBooks connection remains active. You can revoke access at any time through
+                the QuickBooks Developer Portal or by disconnecting within the application.
+            </p>
+        </section>
+
+        <section>
+            <h2>5. Data Sharing</h2>
+            <p>We do not sell, rent, or share your data with third parties except:</p>
+            <ul>
+                <li><strong>Intuit/QuickBooks:</strong> We share transaction data with QuickBooks Online as required
+                to create journal entries via their official API</li>
+                <li><strong>Error Monitoring:</strong> If configured, error logs may be sent to Sentry.io for
+                monitoring purposes (sensitive data is filtered out)</li>
+                <li><strong>Legal Requirements:</strong> We may disclose information if required by law or to
+                protect our legal rights</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>6. Your Rights and Choices</h2>
+
+            <h3>6.1 Access and Control</h3>
+            <p>You have the right to:</p>
+            <ul>
+                <li>Access all data stored by the application</li>
+                <li>Review sync history and mapped data</li>
+                <li>Modify or delete mappings</li>
+                <li>Disconnect from QuickBooks at any time</li>
+                <li>Export sync history data</li>
+            </ul>
+
+            <h3>6.2 QuickBooks Connection</h3>
+            <p>You can revoke the application's access to QuickBooks at any time through:</p>
+            <ul>
+                <li>The application's settings page</li>
+                <li>QuickBooks Online account settings</li>
+                <li>Intuit Developer Portal</li>
+            </ul>
+
+            <h3>6.3 Data Deletion</h3>
+            <p>To delete your data, you can:</p>
+            <ul>
+                <li>Delete the application's database file (sync-history.db)</li>
+                <li>Uninstall the application</li>
+                <li>Contact your system administrator</li>
+            </ul>
+            <p>
+                Note: Deleting data from the application does not delete journal entries already created in QuickBooks.
+                Those must be managed through QuickBooks Online directly.
+            </p>
+        </section>
+
+        <section>
+            <h2>7. QuickBooks Integration</h2>
+            <p>This application integrates with QuickBooks Online using Intuit's official OAuth 2.0 API.
+            When you connect to QuickBooks:</p>
+            <ul>
+                <li>You are redirected to Intuit's secure login page</li>
+                <li>We never see or store your QuickBooks password</li>
+                <li>You explicitly authorize what data we can access</li>
+                <li>You can revoke access at any time</li>
+            </ul>
+            <p>
+                Intuit's privacy policy applies to data handled by QuickBooks:
+                <a href="https://www.intuit.com/privacy/statement/" target="_blank" rel="noopener noreferrer">
+                    https://www.intuit.com/privacy/statement/
+                </a>
+            </p>
+        </section>
+
+        <section>
+            <h2>8. Children's Privacy</h2>
+            <p>
+                This application is intended for business use only and is not directed to children under 13.
+                We do not knowingly collect information from children.
+            </p>
+        </section>
+
+        <section>
+            <h2>9. Changes to This Policy</h2>
+            <p>
+                We may update this Privacy Policy from time to time. We will notify you of any changes by
+                updating the "Last Updated" date at the top of this policy. Continued use of the application
+                after changes constitutes acceptance of the updated policy.
+            </p>
+        </section>
+
+        <section>
+            <h2>10. Contact Information</h2>
+            <p>
+                If you have questions about this Privacy Policy or how we handle your data, please contact
+                your system administrator or the application developer.
+            </p>
+        </section>
+
+        <div class="summary-box">
+            <p>
+                <strong>In Plain English:</strong> This application syncs your transaction data from SQL Server
+                to QuickBooks. We only access data necessary for synchronization, we don't share it with anyone
+                except QuickBooks (as required for the sync), all data stays on your servers, and you can
+                disconnect at any time. We take security seriously and use industry-standard encryption and
+                security practices.
+            </p>
+        </div>
+
+        <div class="back-link">
+            <a href="/">← Back to Application</a>
+        </div>
+    </div>
+</body>
+</html>

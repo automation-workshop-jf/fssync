@@ -1,0 +1,462 @@
+│ <!DOCTYPE html>                                                                                 │
+│ <html lang="en">                                                                                │
+│ <head>                                                                                          │
+│     <meta charset="UTF-8">                                                                      │
+│     <meta name="viewport" content="width=device-width, initial-scale=1.0">                      │
+│     <title>End User License Agreement - FieldStack</title>                                      │
+│     <style>                                                                                     │
+│         * {                                                                                     │
+│             margin: 0;                                                                          │
+│             padding: 0;                                                                         │
+│             box-sizing: border-box;                                                             │
+│         }                                                                                       │
+│                                                                                                 │
+│         body {                                                                                  │
+│             font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica      │
+│ Neue', Arial, sans-serif;                                                                       │
+│             line-height: 1.6;                                                                   │
+│             color: #333;                                                                        │
+│             background-color: #f9fafb;                                                          │
+│             padding: 2rem 1rem;                                                                 │
+│         }                                                                                       │
+│                                                                                                 │
+│         .container {                                                                            │
+│             max-width: 900px;                                                                   │
+│             margin: 0 auto;                                                                     │
+│             background: white;                                                                  │
+│             padding: 3rem;                                                                      │
+│             border-radius: 8px;                                                                 │
+│             box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);                                           │
+│         }                                                                                       │
+│                                                                                                 │
+│         h1 {                                                                                    │
+│             font-size: 2.5rem;                                                                  │
+│             color: #111827;                                                                     │
+│             margin-bottom: 0.5rem;                                                              │
+│         }                                                                                       │
+│                                                                                                 │
+│         .last-updated {                                                                         │
+│             color: #6b7280;                                                                     │
+│             font-size: 0.875rem;                                                                │
+│             margin-bottom: 2rem;                                                                │
+│         }                                                                                       │
+│                                                                                                 │
+│         h2 {                                                                                    │
+│             font-size: 1.5rem;                                                                  │
+│             color: #111827;                                                                     │
+│             margin-top: 2rem;                                                                   │
+│             margin-bottom: 1rem;                                                                │
+│         }                                                                                       │
+│                                                                                                 │
+│         h3 {                                                                                    │
+│             font-size: 1.25rem;                                                                 │
+│             color: #374151;                                                                     │
+│             margin-top: 1.5rem;                                                                 │
+│             margin-bottom: 0.75rem;                                                             │
+│         }                                                                                       │
+│                                                                                                 │
+│         p {                                                                                     │
+│             color: #4b5563;                                                                     │
+│             margin-bottom: 1rem;                                                                │
+│         }                                                                                       │
+│                                                                                                 │
+│         ul {                                                                                    │
+│             margin-left: 1.5rem;                                                                │
+│             margin-bottom: 1rem;                                                                │
+│         }                                                                                       │
+│                                                                                                 │
+│         li {                                                                                    │
+│             color: #4b5563;                                                                     │
+│             margin-bottom: 0.5rem;                                                              │
+│         }                                                                                       │
+│                                                                                                 │
+│         strong {                                                                                │
+│             color: #111827;                                                                     │
+│         }                                                                                       │
+│                                                                                                 │
+│         a {                                                                                     │
+│             color: #2563eb;                                                                     │
+│             text-decoration: underline;                                                         │
+│         }                                                                                       │
+│                                                                                                 │
+│         a:hover {                                                                               │
+│             color: #1d4ed8;                                                                     │
+│         }                                                                                       │
+│                                                                                                 │
+│         .warning-box {                                                                          │
+│             background-color: #fef3c7;                                                          │
+│             border-left: 4px solid #f59e0b;                                                     │
+│             padding: 1rem;                                                                      │
+│             margin: 1.5rem 0;                                                                   │
+│         }                                                                                       │
+│                                                                                                 │
+│         .warning-box p {                                                                        │
+│             color: #92400e;                                                                     │
+│             font-size: 0.875rem;                                                                │
+│             margin: 0;                                                                          │
+│             font-weight: 600;                                                                   │
+│             text-transform: uppercase;                                                          │
+│         }                                                                                       │
+│                                                                                                 │
+│         .danger-box {                                                                           │
+│             background-color: #fee2e2;                                                          │
+│             border-left: 4px solid #ef4444;                                                     │
+│             padding: 1rem;                                                                      │
+│             margin: 1.5rem 0;                                                                   │
+│         }                                                                                       │
+│                                                                                                 │
+│         .danger-box p {                                                                         │
+│             color: #7f1d1d;                                                                     │
+│             font-size: 0.875rem;                                                                │
+│             margin-bottom: 0.5rem;                                                              │
+│         }                                                                                       │
+│                                                                                                 │
+│         .danger-box p:first-child {                                                             │
+│             font-weight: 600;                                                                   │
+│             text-transform: uppercase;                                                          │
+│             margin-bottom: 0.5rem;                                                              │
+│         }                                                                                       │
+│                                                                                                 │
+│         .info-box {                                                                             │
+│             background-color: #eff6ff;                                                          │
+│             border-left: 4px solid #3b82f6;                                                     │
+│             padding: 1rem;                                                                      │
+│             margin: 2rem 0;                                                                     │
+│         }                                                                                       │
+│                                                                                                 │
+│         .info-box p {                                                                           │
+│             color: #1e40af;                                                                     │
+│             font-size: 0.875rem;                                                                │
+│             margin: 0;                                                                          │
+│         }                                                                                       │
+│                                                                                                 │
+│         .back-link {                                                                            │
+│             margin-top: 2rem;                                                                   │
+│             padding-top: 2rem;                                                                  │
+│             border-top: 1px solid #e5e7eb;                                                      │
+│         }                                                                                       │
+│                                                                                                 │
+│         @media print {                                                                          │
+│             body {                                                                              │
+│                 background: white;                                                              │
+│                 padding: 0;                                                                     │
+│             }                                                                                   │
+│             .container {                                                                        │
+│                 box-shadow: none;                                                               │
+│                 padding: 1rem;                                                                  │
+│             }                                                                                   │
+│             .back-link {                                                                        │
+│                 display: none;                                                                  │
+│             }                                                                                   │
+│         }                                                                                       │
+│     </style>                                                                                    │
+│ </head>                                                                                         │
+│ <body>                                                                                          │
+│     <div class="container">                                                                     │
+│         <h1>End User License Agreement (EULA)</h1>                                              │
+│         <p class="last-updated">Last Updated: <script>document.write(new                        │
+│ Date().toLocaleDateString())</script></p>                                                       │
+│                                                                                                 │
+│         <section>                                                                               │
+│             <h2>1. Agreement to Terms</h2>                                                      │
+│             <p>                                                                                 │
+│                 This End User License Agreement ("Agreement") is a binding contract between you │
+│  ("User" or "you")                                                                              │
+│                 and the provider of FieldStack ("Application", "we", "us", or "our"). By        │
+│ installing,                                                                                     │
+│                 accessing, or using the Application, you agree to be bound by the terms of this │
+│  Agreement.                                                                                     │
+│             </p>                                                                                │
+│             <p><strong>IF YOU DO NOT AGREE TO THESE TERMS, DO NOT USE THE                       │
+│ APPLICATION.</strong></p>                                                                       │
+│         </section>                                                                              │
+│                                                                                                 │
+│         <section>                                                                               │
+│             <h2>2. License Grant</h2>                                                           │
+│             <p>Subject to your compliance with this Agreement, we grant you a limited,          │
+│ non-exclusive,                                                                                  │
+│             non-transferable, revocable license to:</p>                                         │
+│             <ul>                                                                                │
+│                 <li>Install and use the Application on your organization's servers or           │
+│ infrastructure</li>                                                                             │
+│                 <li>Connect the Application to your QuickBooks Online account</li>              │
+│                 <li>Synchronize transaction data between your SQL Server database and           │
+│ QuickBooks Online</li>                                                                          │
+│                 <li>Configure mappings, rules, and settings within the Application</li>         │
+│             </ul>                                                                               │
+│         </section>                                                                              │
+│                                                                                                 │
+│         <section>                                                                               │
+│             <h2>3. License Restrictions</h2>                                                    │
+│             <p>You agree NOT to:</p>                                                            │
+│             <ul>                                                                                │
+│                 <li>Copy, modify, or create derivative works of the Application</li>            │
+│                 <li>Reverse engineer, decompile, or disassemble the Application</li>            │
+│                 <li>Rent, lease, loan, resell, sublicense, distribute, or transfer the          │
+│ Application</li>                                                                                │
+│                 <li>Use the Application for any illegal or unauthorized purpose</li>            │
+│                 <li>Remove, alter, or obscure any proprietary notices on the Application</li>   │
+│                 <li>Use the Application to transmit malware, viruses, or harmful code</li>      │
+│                 <li>Attempt to gain unauthorized access to QuickBooks systems or other users'   │
+│ data</li>                                                                                       │
+│                 <li>Use the Application in a manner that violates Intuit's Terms of             │
+│ Service</li>                                                                                    │
+│             </ul>                                                                               │
+│         </section>                                                                              │
+│                                                                                                 │
+│         <section>                                                                               │
+│             <h2>4. Your Responsibilities</h2>                                                   │
+│                                                                                                 │
+│             <h3>4.1 Account Security</h3>                                                       │
+│             <p>You are responsible for:</p>                                                     │
+│             <ul>                                                                                │
+│                 <li>Maintaining the security of your QuickBooks Online account credentials</li> │
+│                 <li>All activities that occur under your account</li>                           │
+│                 <li>Ensuring authorized personnel only have access to the Application</li>      │
+│                 <li>Immediately notifying us of any unauthorized use</li>                       │
+│             </ul>                                                                               │
+│                                                                                                 │
+│             <h3>4.2 Data Accuracy</h3>                                                          │
+│             <p>You are responsible for:</p>                                                     │
+│             <ul>                                                                                │
+│                 <li>The accuracy of data in your SQL Server database</li>                       │
+│                 <li>Proper configuration of mappings and sync rules</li>                        │
+│                 <li>Reviewing synced journal entries in QuickBooks for accuracy</li>            │
+│                 <li>Correcting any errors in synced data</li>                                   │
+│             </ul>                                                                               │
+│                                                                                                 │
+│             <h3>4.3 Compliance</h3>                                                             │
+│             <p>You agree to:</p>                                                                │
+│             <ul>                                                                                │
+│                 <li>Comply with all applicable laws and regulations</li>                        │
+│                 <li>Use the Application only for lawful business purposes</li>                  │
+│                 <li>Comply with Intuit's QuickBooks Online Terms of Service</li>                │
+│                 <li>Maintain proper accounting records and practices</li>                       │
+│             </ul>                                                                               │
+│         </section>                                                                              │
+│                                                                                                 │
+│         <section>                                                                               │
+│             <h2>5. QuickBooks Integration</h2>                                                  │
+│             <p>This Application integrates with QuickBooks Online through Intuit's official     │
+│ API. By using                                                                                   │
+│             this Application:</p>                                                               │
+│             <ul>                                                                                │
+│                 <li>You authorize the Application to access your QuickBooks data as described   │
+│ in the Privacy Policy</li>                                                                      │
+│                 <li>You agree to Intuit's Terms of Service:                                     │
+│                     <a href="https://www.intuit.com/legal/" target="_blank" rel="noopener       │
+│ noreferrer">                                                                                    │
+│                         https://www.intuit.com/legal/                                           │
+│                     </a>                                                                        │
+│                 </li>                                                                           │
+│                 <li>You acknowledge that QuickBooks Online subscription is required             │
+│ separately</li>                                                                                 │
+│                 <li>We are not responsible for QuickBooks Online outages or API changes</li>    │
+│             </ul>                                                                               │
+│         </section>                                                                              │
+│                                                                                                 │
+│         <section>                                                                               │
+│             <h2>6. Data and Privacy</h2>                                                        │
+│             <p>                                                                                 │
+│                 Our collection, use, and protection of your data is governed by our Privacy     │
+│ Policy, which is                                                                                │
+│                 incorporated into this Agreement by reference. Please review the Privacy Policy │
+│  at:                                                                                            │
+│                 <a href="/privacy-policy.html">Privacy Policy</a>                               │
+│             </p>                                                                                │
+│         </section>                                                                              │
+│                                                                                                 │
+│         <section>                                                                               │
+│             <h2>7. Intellectual Property</h2>                                                   │
+│             <p>The Application and all related intellectual property rights are and will remain │
+│  our exclusive                                                                                  │
+│             property. This Agreement does not grant you any rights to:</p>                      │
+│             <ul>                                                                                │
+│                 <li>Our trademarks, logos, or brand names</li>                                  │
+│                 <li>Source code or proprietary algorithms</li>                                  │
+│                 <li>Patents, copyrights, or trade secrets</li>                                  │
+│             </ul>                                                                               │
+│         </section>                                                                              │
+│                                                                                                 │
+│         <section>                                                                               │
+│             <h2>8. Disclaimers and Warranties</h2>                                              │
+│                                                                                                 │
+│             <h3>8.1 "AS IS" Provision</h3>                                                      │
+│             <div class="warning-box">                                                           │
+│                 <p>                                                                             │
+│                     THE APPLICATION IS PROVIDED "AS IS" AND "AS AVAILABLE" WITHOUT WARRANTIES   │
+│ OF ANY KIND,                                                                                    │
+│                     EITHER EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO IMPLIED WARRANTIES  │
+│ OF MERCHANTABILITY,                                                                             │
+│                     FITNESS FOR A PARTICULAR PURPOSE, OR NON-INFRINGEMENT.                      │
+│                 </p>                                                                            │
+│             </div>                                                                              │
+│                                                                                                 │
+│             <h3>8.2 No Guarantee</h3>                                                           │
+│             <p>We do not warrant that:</p>                                                      │
+│             <ul>                                                                                │
+│                 <li>The Application will be error-free or uninterrupted</li>                    │
+│                 <li>Defects will be corrected</li>                                              │
+│                 <li>The Application will meet your specific requirements</li>                   │
+│                 <li>Data synchronization will always be accurate (you must verify synced        │
+│ data)</li>                                                                                      │
+│                 <li>The Application is compatible with future QuickBooks API changes</li>       │
+│             </ul>                                                                               │
+│                                                                                                 │
+│             <h3>8.3 Third-Party Services</h3>                                                   │
+│             <p>                                                                                 │
+│                 We are not responsible for third-party services including QuickBooks Online,    │
+│ your SQL Server,                                                                                │
+│                 or any other integrated systems. Interruptions to these services may affect the │
+│  Application.                                                                                   │
+│             </p>                                                                                │
+│         </section>                                                                              │
+│                                                                                                 │
+│         <section>                                                                               │
+│             <h2>9. Limitation of Liability</h2>                                                 │
+│             <div class="danger-box">                                                            │
+│                 <p>IMPORTANT LEGAL LIMITATION:</p>                                              │
+│                 <p>                                                                             │
+│                     TO THE MAXIMUM EXTENT PERMITTED BY LAW, IN NO EVENT SHALL WE BE LIABLE FOR  │
+│ ANY INDIRECT,                                                                                   │
+│                     INCIDENTAL, SPECIAL, CONSEQUENTIAL, OR PUNITIVE DAMAGES, OR ANY LOSS OF     │
+│ PROFITS, REVENUE,                                                                               │
+│                     DATA, OR DATA USE, ARISING OUT OF OR RELATED TO THIS AGREEMENT OR THE       │
+│ APPLICATION, EVEN IF                                                                            │
+│                     WE HAVE BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGES.                    │
+│                 </p>                                                                            │
+│             </div>                                                                              │
+│             <p>This includes but is not limited to damages resulting from:</p>                  │
+│             <ul>                                                                                │
+│                 <li>Errors in synced data or journal entries</li>                               │
+│                 <li>Lost or corrupted data</li>                                                 │
+│                 <li>Application downtime or errors</li>                                         │
+│                 <li>QuickBooks API changes or outages</li>                                      │
+│                 <li>Unauthorized access to your systems</li>                                    │
+│                 <li>Tax or accounting errors resulting from inaccurate data</li>                │
+│             </ul>                                                                               │
+│         </section>                                                                              │
+│                                                                                                 │
+│         <section>                                                                               │
+│             <h2>10. Indemnification</h2>                                                        │
+│             <p>                                                                                 │
+│                 You agree to indemnify, defend, and hold harmless the Application provider and  │
+│ its affiliates                                                                                  │
+│                 from any claims, damages, losses, liabilities, and expenses (including          │
+│ attorney's fees) arising                                                                        │
+│                 out of or related to:                                                           │
+│             </p>                                                                                │
+│             <ul>                                                                                │
+│                 <li>Your use or misuse of the Application</li>                                  │
+│                 <li>Your violation of this Agreement</li>                                       │
+│                 <li>Your violation of any laws or third-party rights</li>                       │
+│                 <li>Inaccuracies in your source data</li>                                       │
+│                 <li>Unauthorized access to your accounts due to your negligence</li>            │
+│             </ul>                                                                               │
+│         </section>                                                                              │
+│                                                                                                 │
+│         <section>                                                                               │
+│             <h2>11. Term and Termination</h2>                                                   │
+│                                                                                                 │
+│             <h3>11.1 Term</h3>                                                                  │
+│             <p>This Agreement begins when you first use the Application and continues until     │
+│ terminated.</p>                                                                                 │
+│                                                                                                 │
+│             <h3>11.2 Termination by You</h3>                                                    │
+│             <p>You may terminate this Agreement at any time by:</p>                             │
+│             <ul>                                                                                │
+│                 <li>Disconnecting from QuickBooks</li>                                          │
+│                 <li>Uninstalling the Application</li>                                           │
+│                 <li>Ceasing all use of the Application</li>                                     │
+│             </ul>                                                                               │
+│                                                                                                 │
+│             <h3>11.3 Termination by Us</h3>                                                     │
+│             <p>We may terminate or suspend your access immediately if:</p>                      │
+│             <ul>                                                                                │
+│                 <li>You violate this Agreement</li>                                             │
+│                 <li>You use the Application for illegal purposes</li>                           │
+│                 <li>We are required to do so by law</li>                                        │
+│                 <li>We discontinue the Application</li>                                         │
+│             </ul>                                                                               │
+│                                                                                                 │
+│             <h3>11.4 Effect of Termination</h3>                                                 │
+│             <p>Upon termination:</p>                                                            │
+│             <ul>                                                                                │
+│                 <li>Your license to use the Application ends immediately</li>                   │
+│                 <li>You must cease all use of the Application</li>                              │
+│                 <li>We may delete your sync history and configuration data</li>                 │
+│                 <li>Journal entries already created in QuickBooks will remain</li>              │
+│                 <li>Sections 7, 8, 9, 10, and 12 of this Agreement survive termination</li>     │
+│             </ul>                                                                               │
+│         </section>                                                                              │
+│                                                                                                 │
+│         <section>                                                                               │
+│             <h2>12. Updates and Changes</h2>                                                    │
+│                                                                                                 │
+│             <h3>12.1 Application Updates</h3>                                                   │
+│             <p>                                                                                 │
+│                 We may update the Application from time to time to add features, fix bugs, or   │
+│ maintain                                                                                        │
+│                 compatibility with QuickBooks API. You are responsible for installing updates.  │
+│             </p>                                                                                │
+│                                                                                                 │
+│             <h3>12.2 Agreement Changes</h3>                                                     │
+│             <p>                                                                                 │
+│                 We may modify this Agreement at any time. We will notify you of material        │
+│ changes by updating                                                                             │
+│                 the "Last Updated" date. Continued use after changes constitutes acceptance of  │
+│ the modified Agreement.                                                                         │
+│             </p>                                                                                │
+│         </section>                                                                              │
+│                                                                                                 │
+│         <section>                                                                               │
+│             <h2>13. General Provisions</h2>                                                     │
+│                                                                                                 │
+│             <h3>13.1 Entire Agreement</h3>                                                      │
+│             <p>                                                                                 │
+│                 This Agreement, together with the Privacy Policy, constitutes the entire        │
+│ agreement between                                                                               │
+│                 you and us regarding the Application.                                           │
+│             </p>                                                                                │
+│                                                                                                 │
+│             <h3>13.2 Severability</h3>                                                          │
+│             <p>                                                                                 │
+│                 If any provision of this Agreement is found to be unenforceable, the remaining  │
+│ provisions                                                                                      │
+│                 will remain in full effect.                                                     │
+│             </p>                                                                                │
+│                                                                                                 │
+│             <h3>13.3 Waiver</h3>                                                                │
+│             <p>                                                                                 │
+│                 Our failure to enforce any provision of this Agreement does not waive our right │
+│  to enforce                                                                                     │
+│                 it in the future.                                                               │
+│             </p>                                                                                │
+│                                                                                                 │
+│             <h3>13.4 Assignment</h3>                                                            │
+│             <p>                                                                                 │
+│                 You may not assign or transfer this Agreement. We may assign this Agreement     │
+│ without restriction.                                                                            │
+│             </p>                                                                                │
+│                                                                                                 │
+│             <h3>13.5 Contact</h3>                                                               │
+│             <p>                                                                                 │
+│                 For questions about this Agreement, contact your system administrator or the    │
+│ Application developer.                                                                          │
+│             </p>                                                                                │
+│         </section>                                                                              │
+│                                                                                                 │
+│         <div class="info-box">                                                                  │
+│             <p>                                                                                 │
+│                 <strong>BY USING THE APPLICATION, YOU ACKNOWLEDGE THAT YOU HAVE READ THIS       │
+│ AGREEMENT,                                                                                      │
+│                 UNDERSTAND IT, AND AGREE TO BE BOUND BY ITS TERMS.</strong>                     │
+│             </p>                                                                                │
+│         </div>                                                                                  │
+│                                                                                                 │
+│         <div class="back-link">                                                                 │
+│             <a href="/">← Back to Application</a>                                               │
+│         </div>                                                                                  │
+│     </div>                                                                                      │
+│ </body>                                                                                         │
+│ </html>                                     
